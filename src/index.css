@@ -1,0 +1,60 @@
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+
+body {
+  margin: 0;
+  font-family:  'Roboto', 'Oxygen','Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button[disabled] {
+  background-color: lightgray !important;
+  cursor: not-allowed;
+}
+
+.primary-button {
+  padding: 10px 15px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.secondary-button {
+  padding: 10px 15px;
+  background-color: red;
+  color: #fff;
+  border-radius: 150px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.custom-button {
+  background-color: #61dafb;
+  color: black;
+}
