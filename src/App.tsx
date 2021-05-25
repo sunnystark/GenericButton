@@ -31,12 +31,17 @@ function App() {
       <h1>Buttons Mela </h1>
       {/*types of button*/}
       <ButtonsWrapper>
-        <Button
-       
-          variant="primary"
-          onClick={() => handleClick(" You clicked on Primary button !")}
-          text={"First Button"}
+        
+      <Button
+          style={{
+            backgroundColor: "pink",
+            width: "100px",
+            borderRadius: "12px",
+          }}
+          onClick={() => handleClick(" You clicked on Custom styled button!")}
+          text={"Custom styled button"}
         />
+       
         <Button
        
           variant="secondary"
@@ -56,14 +61,11 @@ function App() {
         {/* Button Design from outside | Can be styled from outside*/}
 
         <Button
-          style={{
-            backgroundColor: "pink",
-            width: "100px",
-            borderRadius: "12px",
-          }}
-          onClick={() => handleClick(" You clicked on Custom styled button!")}
-          text={"Custom styled button"}
-        />
+       
+       variant="primary"
+       onClick={() => handleClick(" You clicked on Primary button !")}
+       text={"First Button"}
+     />
         <Button
           className={"custom-button"}
           onClick={() => handleClick(" You clicked on Custom class button clicked!")}
