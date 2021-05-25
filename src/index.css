@@ -13,14 +13,14 @@ input[type=text]:focus {
 
 body {
   margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family:  'Roboto', 'Oxygen','Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, 'Courier New',
     monospace;
 }
 
@@ -30,14 +30,14 @@ button[disabled] {
 }
 
 .primary-button {
-  padding: 10px 15px;
-  background-color: blue;
-  color: #fff;
   border: none;
+  align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 10px 15px;
+  background-color: blue;
+  color: #fff;
   font-size: 18px;
 }
 

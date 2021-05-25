@@ -2,16 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 interface Props {
-  color?: string; //button text color
-  icon?: React.ReactNode; // prefix icon
-  onClick?: any; // onClick callback
-  disabled?: boolean; // button disable
-  loading?: boolean; // show button loading
-  variant?: string; // button variant Primary & Secondary
-  text?: string; // button text/label
-  type?: any; // button type button, submit, reset
-  className?: string; // classes
-  style?: object; // styles
+  onClick?: any; 
+  disabled?: boolean; 
+  loading?: boolean; 
+  variant?: string; 
+  text?: string; 
+  type?: any; 
+  className?: string; 
+  style?: object; 
+  color?: string; 
+  icon?: React.ReactNode; 
+  
 }
 
 const IconDiv = styled.div`
@@ -24,11 +25,11 @@ export function Icon({ icon }: { icon: React.ReactNode }) {
 }
 
 const Button: React.FC<Props> = ({
-  disabled,
   type,
   className,
   variant,
   loading,
+  disabled,
   color,
   icon,
   onClick,
@@ -41,7 +42,7 @@ const Button: React.FC<Props> = ({
       onClick={onClick && onClick}
       className={`${
         variant === "secondary" ? "secondary-button" : "primary-button"
-      } ${className}`} // primary is default
+      } ${className}`} 
       style={{
         color: color || "",
         ...style,
