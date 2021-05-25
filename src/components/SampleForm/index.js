@@ -15,13 +15,19 @@ const SampleForm = () => {
 
     return (
         <FormWrap>
-            <form onSubmit={(e) => handleSubmit(e)} onReset={(e) => handleReset(e)}>
+            <form 
+            onSubmit={(e) => handleSubmit(e)} 
+            onReset={(e) => handleReset(e)}>
                 <h2>Form Section </h2>
                 <div>
-                    <input placeholder="Enter your first name"/>
+                    <input 
+                    type="text" 
+                    placeholder="Enter your first name"/>
                 </div>
                 <div>
-                    <input placeholder="Ent yourlast name"/>
+                    <input  
+                    type="text" 
+                    placeholder="Enter your last name"/>
                 </div>
                 <div className="form-footer">
                     <Button

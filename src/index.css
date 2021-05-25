@@ -1,4 +1,4 @@
-input[type=text], input[type=password], textarea {  
+input[type=text] {  
   width: 100%;  
   padding: 15px;  
   margin: 5px 0 22px 0;  
@@ -6,7 +6,7 @@ input[type=text], input[type=password], textarea {
   border: none;  
   background: #f1f1f1;  
 }  
-input[type=text]:focus, input[type=password]:focus {  
+input[type=text]:focus {  
   background-color: orange;  
   outline: none;  
 }  
@@ -55,6 +55,6 @@ button[disabled] {
 }
 
 .custom-button {
-  background-color: #61dafb;
+  background-color: #61fb7b;
   color: black;
 }
